@@ -10,10 +10,21 @@ body{
     background: linear-gradient(270deg, #f3d7ae, #f7cac9, #f8e7b9, #ffeea4, #f3d7ae);
     background-size: 400% 400%;
     animation: gradientBG 16s ease-in-out infinite;
-    width: 218px;
-    height: 471px;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
     border-radius: 18px;
     border: 5px solid #ffeeb6;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+@media screen and (max-width:500px) {
+    .weather_app{
+        border-radius: 0px;
+        max-height: 900px;
+    }
 }
 
 @keyframes gradientBG {
@@ -43,10 +54,11 @@ body{
     justify-content: center;
 }
 
-.weather_now__icon{
-    width: 83px;
-    height: 80px;
-    background-color: #ffffff85;
+
+
+.weather_now__icon_img{
+    width: 100px;
+    height: auto;
     margin-right: 0px;
 }
 
@@ -61,25 +73,31 @@ body{
 }   
 
 .row_holder{
-    height: 154px;
+    height: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     margin-top: 15px;
+    margin-bottom: 20px;
 }
 
+
 .row{
-    height: 38px;
-    width: 186px;
+    height: 40px;
+    width: 220px;
     background-color:rgb(255, 255, 255, 0.5);
     border-radius: 10px;
     margin-bottom: 5px;
 }
 
-.temperature__time_table{
-    height: 72px;
+.next7days_weather{
+
     display: flex;
-    justify-content: center;
+    flex-direction: column  ;
+    align-items: center;
+    height: 400px;
+    justify-content: space-around;  
 }
 
 .weather_time{
@@ -88,3 +106,10 @@ body{
     border-radius: 20px;
     background-color: rgb(255, 255, 255, 0.3);
 }
+
+.next7days{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
