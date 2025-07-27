@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.weather_app{
+    background: linear-gradient(270deg, #f3d7ae, #f7cac9, #f8e7b9, #ffeea4, #f3d7ae);
+    background-size: 400% 400%;
+    animation: gradientBG 16s ease-in-out infinite;
+    width: 218px;
+    height: 471px;
+    border-radius: 18px;
+    border: 5px solid #ffeeb6;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}   
+
+.header{
+    display: flex;
+    width: 218px;
+    height: 81px;
+    flex-direction: column;
+    margin-top: 18px;
+    margin-left: 25px;
+}
+
+.weather_now{
+    height: 88px;
+    display: flex;
+    justify-content: center;
+}
+
+.weather_now__icon{
+    width: 83px;
+    height: 80px;
+    background-color: #ffffff;
+}
