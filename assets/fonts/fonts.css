@@ -23,3 +23,15 @@
     font-size: 9px;
     color: rgba(154, 147, 140, 1);
 }
+
+.text_regular__weather{
+    font-family: Inter-Regular;
+    color: rgba(48, 51, 69, 1);
+    font-size: 15px;
+}
+
+.text_medium__weather{
+    font-family: Inter-Medium;
+    font-size: 25px;
+    color: rgba(48, 51, 69, 1);
+}
